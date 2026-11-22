@@ -132,6 +132,20 @@
       line-height: 1.5;
     }
 
+    .app-list {
+      list-style: disc;
+      margin: 0.4rem 0 0.4rem 1.25rem;
+      padding: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .app-list .new {
+      font-weight: 700;
+      color: var(--text);
+    }
+
     .footer {
       margin-top: 2rem;
       font-size: 0.78rem;
@@ -159,15 +173,29 @@
     <h2>Portfolio</h2>
     <ul class="portfolio">
       <li>
-        <a class="app" href="https://gedcom.bjasonvogel.com/" target="_blank" rel="noopener noreferrer">
-          <p class="app-name">GEDCOM Analyzer</p>
-          <p class="app-desc">Upload a GEDCOM family tree file. App will perform a series of error checks and provide interesting facts and metrics about your tree.</p>
+        <a class="app" href="https://mustercall.com/" target="_blank" rel="noopener noreferrer">
+          <p class="app-name">Muster</p>
+          <p class="app-desc">Emergency check-in management for teams and small organizations. Send a muster call, and see in minutes who's safe and who needs help.</p>
         </a>
       </li>
       <li>
         <a class="app" href="https://tasks.bjasonvogel.com" target="_blank" rel="noopener noreferrer">
-          <p class="app-name">Task Manager</p>
-          <p class="app-desc">A custom task tracking app I built to suit the way I work best. Created it as a multi-tenant app so others can benefit as well. Self-service sign-up so give it a try!</p>
+          <p class="app-name">Task Tracker</p>
+          <p class="app-desc">A custom task tracking app. Notable features over every other tool I've used:</p>
+          <ul class="app-list">
+            <li>Improved handling of recurring tasks</li>
+            <li>Timestamped update logs for history</li>
+            <li>Special "Focus Mode" filters to see what's most important</li>
+            <li><span class="new">NEW!</span> Now a PWA - install it on your phone!</li>
+          </ul>
+          <p class="app-desc">Free trial - sign up and give it a try!</p>
+        </a>
+      </li>
+      <li>
+        <a class="app" href="https://gedcom.bjasonvogel.com/" target="_blank" rel="noopener noreferrer">
+          <p class="app-name">GEDCOM Analyzer</p>
+          <p class="app-desc">Upload a GEDCOM family tree file. App will perform a series of error checks and provide interesting facts and metrics about your tree.</p>
+          <p class="app-desc">No account required - try it for free!</p>
         </a>
       </li>
     </ul>
